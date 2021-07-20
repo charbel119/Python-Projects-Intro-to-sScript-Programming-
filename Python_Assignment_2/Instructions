@@ -1,0 +1,32 @@
+Python – Assignment 2
+A gene is a region of DNA consisting of several coding parts (called exons), interspersed
+by non-coding parts (called introns). The coding parts are concatenated to form a string
+of nucleotides called mRNA, where occurrences of the letter T in the coding parts are 
+substituted by the letter U. A triplet of mRNA letters codes for a specific amino acid, which 
+are the building blocks of proteins. These consecutive triplets of letters in the mRNA are 
+translated into its corresponding protein sequence of amino acids.
+The goal of this assignment is to ONLY use Python programming language to write a 
+script that maps a gene sequence into its corresponding protein sequence.
+Three input files are needed for this assignment. They are available on Blackboard. Make 
+sure to place them in the same directory as your Python script.
+1) “gene_sequence.txt”: the nucleotide sequence of the gene in question.
+2) “exon_position.txt”: contains the start and end positions of the exon regions. 
+Each line holds the start and end positions of an exon region. To form the mRNA, 
+only the exon regions (the coding parts) of the gene must be combined while 
+replacing the letter T by the letter U.
+3) “code.txt”: contains the mapping of mRNA triplets to amino acids. The first 
+column is the mRNA triplet, while the other columns represents the 1-letter
+symbol, a 3-letter name, and the full name of the corresponding amino acid. To 
+create the protein, we replace the triplets of the mRNA strings by the
+corresponding 1-letter.
+ATTENTION: the translation always begins with the amino acid Methionine, code AUG, 
+and ends when one of the three stop codons is met (check the code.txt file). You must 
+thus check for the correct start and stop criteria.
+Store the protein sequence/string in a file, split on multiple lines with 80 characters per 
+line. It is a good practice to have a separate folder for the files being created. Save that file 
+in a folder named “output” and test whether this folder exists, and if not, create this folder.The second part of the assignment is to investigate a human disease related to the gene in 
+question. This diseases is caused by a mutation of the nucleotide in position 30049 (0-
+based), a mutation from T to A.
+The goal is to check what happens to the protein if this nucleotide is mutated. Compare 
+the length of the mutated protein to the length of the non-mutated gene. State your 
+conclusion.
